@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPGeolocationGUI", "IPGeolo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPGeolocationService", "IPGeolocationService\IPGeolocationService.csproj", "{186A64BA-D816-4DB4-BA4D-CC57501CB020}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{B054560C-3548-42EC-849A-A24A1B7EAB1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Helpers", "Testing\Tests.Helpers\Tests.Helpers.csproj", "{21384EC4-2A7E-434D-83F9-59CF462F6627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPGeolocationGUI.Tests", "Testing\IPGeolocationGUI.Tests\IPGeolocationGUI.Tests.csproj", "{19C3B760-207F-4E53-A501-2729FDF1F131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,21 @@ Global
 		{186A64BA-D816-4DB4-BA4D-CC57501CB020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{186A64BA-D816-4DB4-BA4D-CC57501CB020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{186A64BA-D816-4DB4-BA4D-CC57501CB020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21384EC4-2A7E-434D-83F9-59CF462F6627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21384EC4-2A7E-434D-83F9-59CF462F6627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21384EC4-2A7E-434D-83F9-59CF462F6627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21384EC4-2A7E-434D-83F9-59CF462F6627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C3B760-207F-4E53-A501-2729FDF1F131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C3B760-207F-4E53-A501-2729FDF1F131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C3B760-207F-4E53-A501-2729FDF1F131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C3B760-207F-4E53-A501-2729FDF1F131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21384EC4-2A7E-434D-83F9-59CF462F6627} = {B054560C-3548-42EC-849A-A24A1B7EAB1F}
+		{19C3B760-207F-4E53-A501-2729FDF1F131} = {B054560C-3548-42EC-849A-A24A1B7EAB1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2194D09D-33B0-4D08-AFB1-2E493BB7AD1A}
