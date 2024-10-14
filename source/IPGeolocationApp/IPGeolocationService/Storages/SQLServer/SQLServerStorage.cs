@@ -14,6 +14,11 @@ namespace IPGeolocationService.Storages.SQLServer
 
         public ObservableCollection<Address> LoadAddressData()
         {
+            if (!_dataContext.Database.CanConnect())
+            {
+                throw new Exception("Cannot connect to the database.");
+            }
+
             var addressesData = (from a in _dataContext.Addresses
                                  select a).ToList();
 
