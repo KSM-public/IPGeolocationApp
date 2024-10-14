@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace IPGeolocationService.Storages.SQLServer;
-public partial class SQLServerDataContext : DbContext
+internal partial class SQLServerDataContext : DbContext
 {
     private string _connectionString;
 
